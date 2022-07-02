@@ -61,7 +61,7 @@
     <div class="col-md-8 offset-md-2">
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label fw-bold"
-          >BUSCAR</label
+          >BUSCAR POR CÉDULA O NOMBRE</label
         >
         <input
           type="text"
@@ -85,6 +85,9 @@
           <p class="pt-4"><b>IGLESIA: </b>{{ item.iglesia ? item.iglesia : '-- Sin asignar ---'}}</p>
           <p class="pt-4">
             <b>LÍDER: </b>{{ item.lider == "X" ? "SI" : "NO" }}
+          </p>
+          <p class="pt-4">
+            <b>CUPOS CABAÑA: </b><span class="text-danger fw-bold h5">{{ item.cantidad }}</span>
           </p>
           <p class="pt-4 text-center">
             <b># CABAÑA: </b><br /><br /><span
